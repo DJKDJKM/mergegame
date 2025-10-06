@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Town Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🏘️ Merge Town Builder</h1>
+            <div class="resources">
+                <div class="resource">💰 Coins: <span id="coins">0</span></div>
+                <div class="resource">⭐ Stars: <span id="stars">0</span></div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Production Area -->
+            <div class="section">
+                <h2>🏭 Your Machines</h2>
+                <div id="machines-area" class="machines-grid"></div>
+            </div>
+
+            <!-- Merge Board -->
+            <div class="section">
+                <h2>📦 Merge Board</h2>
+                <div id="merge-board" class="merge-grid"></div>
+            </div>
+
+            <!-- Customer Orders -->
+            <div class="section">
+                <h2>👥 Customer Orders</h2>
+                <div id="orders-area" class="orders-container"></div>
+            </div>
+
+            <!-- Houses to Repair -->
+            <div class="section">
+                <h2>🏠 Houses to Repair</h2>
+                <div id="houses-area" class="houses-grid"></div>
+            </div>
+
+            <!-- Upgrades -->
+            <div class="section">
+                <h2>⚡ Upgrades</h2>
+                <div id="upgrades-area" class="upgrades-grid"></div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>🖱️ Click machines to produce items</li>
+                <li>🔄 Drag items to merge board, merge same items to upgrade them</li>
+                <li>👤 Fulfill customer orders to earn coins</li>
+                <li>🏠 Use coins and stars to repair houses and unlock new content</li>
+                <li>🔓 Merge special items with locked machines to unlock them!</li>
+            </ul>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
